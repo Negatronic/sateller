@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "jsnext:main": "dist/satellite.es.js",
   "types": "types/index.d.ts",
+  "type": "module",
   "module": "dist/satellite.es.js",
   "scripts": {
     "build": "rimraf lib dist && npm run transpile && npm run dist",
@@ -19,6 +20,7 @@
     "lint": "eslint src",
     "lint:test": "eslint test",
     "test": "jest",
+    "start": "node src/index",
     "test:coverage": "jest --coverage",
     "test:coveralls": "npm run test:coverage && cat coverage/lcov.info | coveralls",
     "raise": "raise-version",
@@ -40,7 +42,9 @@
   "bugs": {
     "url": "https://github.com/shashwatak/satellite-js/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "mathjs": "^10.0.2"
+  },
   "devDependencies": {
     "@babel/cli": "^7.11.6",
     "@babel/core": "^7.11.6",

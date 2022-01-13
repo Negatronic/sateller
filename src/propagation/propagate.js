@@ -1,8 +1,8 @@
-import { minutesPerDay } from '../constants';
+import { minutesPerDay } from '../constants.js';
 
-import { jday } from '../ext';
+import { jday } from '../ext.js';
 
-import sgp4 from './sgp4';
+import sgp4 from './sgp4.js';
 
 export default function propagate(...args) {
   // Return a position and velocity vector for a given date and time.
