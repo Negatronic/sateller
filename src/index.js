@@ -58,9 +58,4 @@ const tle = {
     '2 37748   0.0170   4.5143 0002581 269.7569 282.6272  1.00271132 38250',
 };
 
-// console.log(getSubSatellitePoint(tle));
-console.log(getSatelliteInfo(tle));
-
-// var satrec = twoline2satrec(tle1, tle2);
-// var positionAndVelocity = propagate(satrec, new Date());
-// console.log(positionAndVelocity.position);
+// console.log(getSatelliteInfo(tle, 1642200201487));

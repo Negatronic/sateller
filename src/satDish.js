@@ -238,7 +238,7 @@ export function getSatelliteInfo(
   // Geodetic coords
   const { longitude, latitude, height } = positionGd;
 
-  // Calculate LNB Skew (polarization)
+  /* Calculate LNB Skew (polarization)*/
 
   //initial angles
   const angleB = observerGd.longitude - longitude;
